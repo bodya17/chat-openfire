@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Strophe.js Example</title>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js'></script>
+  <script src='lib/strophe.js'></script>
+  </head>
+  <body>
+    <div id='login' style='text-align: center'>
+      <form name='cred'>
+        <label for='jid'>JID:</label>
+        <input type='text' id='jid' />
+        <label for='pass'>Password:</label>
+        <input type='password' id='pass' />
+        <input type='button' id='connect' value='connect' />
+      </form>
+    </div>
+    <hr />
+    
+    <div>
+      <label for="">Message: </label>
+      <input type="text" id="message-text">
+    </div>
+    <div>
+      <label for="">Recipient: </label>
+      <input type="text" id="recipient">
+    </div>
+    <button id="send">Send message</button>
+
+    <h1>Messages:</h1>
+    <div id='log'></div>
+    
+    <script src='main.js'></script>
+  </body>
+</html>
